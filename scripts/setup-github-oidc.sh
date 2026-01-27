@@ -167,6 +167,8 @@ POLICY_DOCUMENT=$(cat <<EOF
                 "s3:GetBucketVersioning"
             ],
             "Resource": [
+                "arn:aws:s3:::*-terraform-state-*",
+                "arn:aws:s3:::*-terraform-state-*/*",
                 "arn:aws:s3:::*-terraform-state",
                 "arn:aws:s3:::*-terraform-state/*"
             ]
