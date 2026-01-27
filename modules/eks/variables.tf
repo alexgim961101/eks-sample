@@ -15,12 +15,12 @@ variable "project_name" {
 variable "cluster_version" {
   description = "EKS Kubernetes 버전"
   type        = string
-  default     = "1.28"
+  default     = "1.34"
 
   # 💡 EKS 버전 정책:
   # - AWS는 최신 4개 버전만 지원
   # - 버전 EOL 전에 업그레이드 필요
-  # - 마이너 버전만 지정 (1.28), 패치는 AWS 관리
+  # - 마이너 버전만 지정 (1.34), 패치는 AWS 관리
 }
 
 variable "vpc_id" {
