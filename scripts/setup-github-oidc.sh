@@ -190,6 +190,7 @@ POLICY_DOCUMENT=$(cat <<EOF
             "Action": [
                 "ec2:*Vpc*",
                 "ec2:*Subnet*",
+                "ec2:*Route*",
                 "ec2:*RouteTable*",
                 "ec2:*InternetGateway*",
                 "ec2:*NatGateway*",
