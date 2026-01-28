@@ -38,7 +38,7 @@ variable "vpc_cidr" {
 variable "cluster_version" {
   description = "EKS Kubernetes 버전"
   type        = string
-  default     = "1.28"
+  default     = "1.34"
 }
 
 # ============================================================================
