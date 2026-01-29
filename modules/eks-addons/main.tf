@@ -218,10 +218,10 @@ resource "aws_iam_role_policy_attachment" "ebs_csi" {
 
 # 💡 EKS Add-on으로 설치 (Helm이 아닌 AWS 네이티브 방식)
 # AWS가 직접 관리하므로 업데이트가 더 쉽습니다.
+# addon_version을 생략하면 EKS 클러스터 버전과 호환되는 최신 버전이 자동 선택됩니다.
 resource "aws_eks_addon" "ebs_csi" {
   cluster_name             = var.cluster_name
   addon_name               = "aws-ebs-csi-driver"
-  addon_version            = "v1.25.0-eksbuild.1"
   service_account_role_arn = aws_iam_role.ebs_csi.arn
 
   # 충돌 시 덮어쓰기

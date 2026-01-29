@@ -235,6 +235,8 @@ POLICY_DOCUMENT=$(cat <<EOF
                 "iam:ListAttachedRolePolicies",
                 "iam:TagRole",
                 "iam:UntagRole",
+                "iam:TagPolicy",
+                "iam:UntagPolicy",
                 "iam:ListInstanceProfilesForRole",
                 "iam:CreateOpenIDConnectProvider",
                 "iam:GetOpenIDConnectProvider",
